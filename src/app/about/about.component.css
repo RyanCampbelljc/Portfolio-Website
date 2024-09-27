@@ -17,3 +17,8 @@
 .about-content-item{
     flex: 1 1 0;
 }
+#about-images-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
