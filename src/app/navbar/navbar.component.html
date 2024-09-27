@@ -1,0 +1,7 @@
+<nav id="navbar-container">
+  <ul>
+    @for(item of navbarItems; track $index){
+    <app-navbar-item [label]="item.label"></app-navbar-item>
+    }
+  </ul>
+</nav>

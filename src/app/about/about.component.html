@@ -1,0 +1,24 @@
+<div id="about-container">
+  <div class="title-font-size">About</div>
+  <div id="about-content">
+    <div class="about-content-item">
+      Fully committed to the philosophy of life-long learning, I’m a full stack
+      developer with a deep passion for JavaScript, React and all things web
+      development. The unique combination of creativity, logic, technology and
+      never running out of new things to discover, drives my excitement and
+      passion for web development. When I’m not at my computer I like to spend
+      my time reading, keeping fit and playing guitar.
+    </div>
+    <div class="about-content-item">
+      I will be putting some pictures of the logos my skills here.
+      <!-- prettier-ignore -->
+      @for(image of imageList; track $index){
+      <!--todo is there anything reduant here about typing <app-about-image>. could i somehow to insert the object(image) here-->
+      <app-about-image
+        [title]="image.title"
+        [imageLink]="image.imageLink"
+      ></app-about-image>
+      }
+    </div>
+  </div>
+</div>
