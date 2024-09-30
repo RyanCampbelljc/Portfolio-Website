@@ -13,3 +13,18 @@ ul{
     justify-content: flex-end;
     gap: 30px;
 }
+
+li{
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* used to highlight navbar item based on scroll down the page */
+.isActive{
+    color: red;
+}

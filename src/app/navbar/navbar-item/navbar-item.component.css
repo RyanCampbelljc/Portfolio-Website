@@ -1,9 +1,0 @@
-li{
-    list-style-type: none;
-    font-size: 1.3rem;
-}
-
-li:hover{
-    color: red;
-    cursor: pointer;
-}
