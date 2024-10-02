@@ -12,4 +12,5 @@ import { Component, Input } from '@angular/core';
 //NavbarItem will get the label in the html from the parent
 export class NavbarItemComponent {
   @Input() label: string = "";
+  @Input() ref: string = "";
 }

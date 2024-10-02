@@ -1,9 +1,9 @@
 <app-navbar
-  [navbarItems]="[
-    { label: 'Home' },
-    { label: 'About' },
-    { label: 'Projects' },
-    { label: 'Contact' }
+  [navbarData]="[
+    { label: 'Home', ref: '#home' },
+    { label: 'About', ref: '#about' },
+    { label: 'Projects', ref: '#projects' },
+    { label: 'Contact', ref: '#contact' }
   ]"
 ></app-navbar>
 <app-hero></app-hero>
@@ -13,6 +13,7 @@
     { title: 'CSS', imageLink: 'assets/css.png' },
     { title: 'TypeScript', imageLink: 'assets/ts.png' },
     { title: 'ExpressJS', imageLink: 'assets/express.png' },
+    { title: 'Angular', imageLink: 'assets/angular.png' },
     { title: 'NodeJS', imageLink: 'assets/node.png' },
     { title: 'C++', imageLink: 'assets/c++.png' },
     { title: 'OpenGL', imageLink: 'assets/opengl.png' },
@@ -22,3 +23,4 @@
   ]"
 ></app-about>
 <app-projects></app-projects>
+<app-contact></app-contact>

@@ -31,6 +31,10 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     margin: 0 150px;
+    /* When you jump with nav bar padding-top makes sure that the title isnt behind the navbar */
+    padding-top: 90px;
+    /* Gap between Section title and content */
+    gap: 100px;
 }

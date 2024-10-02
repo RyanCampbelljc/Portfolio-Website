@@ -1,0 +1,43 @@
+input{
+    height: 30px;
+    width: 400px;
+    background-color: rgb(58, 57, 57);
+    border: none;
+}
+
+.icon-size{
+    font-size: 36px
+}
+
+#contact-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(68, 71, 73);
+    padding: 30px;
+}
+
+#input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+#footer-logos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
