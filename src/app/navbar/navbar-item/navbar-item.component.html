@@ -1,4 +1,11 @@
 <li>
   <!-- <a [href]="ref" class="textColorFade">{{ label }}</a> -->
-  <a href="{{ ref }}" class="textColorFade">{{ label }}</a>
+  <!-- in html the attribute is just data-reference. attr needs to be at start for angular -->
+  <a
+    (click)="scrollToRef()"
+    attr.data-reference="{{ ref }}"
+    class="textColorFade"
+    >{{ label }}</a
+  >
+  <!-- <a href="{{ ref }}" class="textColorFade">{{ label }}</a> -->
 </li>

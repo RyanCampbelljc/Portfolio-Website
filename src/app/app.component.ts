@@ -25,8 +25,8 @@ export class AppComponent {
     const navLinks = document.querySelectorAll('nav a');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        const id = entry.target.getAttribute('id');
-        const link = document.querySelector(`a[href="#${id}"]`);
+        const id = entry.target.getAttribute('id'); // gets id's from the page sections
+        const link = document.querySelector(`a[data-reference="#${id}"]`);//finds the link to highlight using the href with associated id
 
         if (entry.isIntersecting) {
           navLinks.forEach(link => link.classList.remove('active'));
