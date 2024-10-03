@@ -6,7 +6,7 @@
 <div class="page-section" id="contact">
   <div class="title-font-size">Contact</div>
   <div id="contact-content">
-    <div>Some placeholder text</div>
+    <div class="paragraph-font-size">Some placeholder text</div>
 
     <form id="content-input-container" method="POST">
       <input type="text" name="name" placeholder="Name" #nameInput />
@@ -20,14 +20,28 @@
         id="message-input"
         #messageInput
       />
-      <button
-        type="button"
-        (click)="
-          onSubmit(nameInput.value, emailInput.value, messageInput.value)
-        "
-      >
-        SUBMIT
-      </button>
+      <div id="contact-submit-section">
+        <div id="sumbit-error-messages">
+          <div class="paragraph-font-size" hidden id="name-error-message">
+            Please fill in your name
+          </div>
+          <div class="paragraph-font-size" hidden id="email-error-message">
+            Please fill in your email
+          </div>
+          <div class="paragraph-font-size" hidden id="message-error-message">
+            Please leave a message
+          </div>
+        </div>
+        <button
+          type="button"
+          class="paragraph-font-size"
+          (click)="
+            onSubmit(nameInput.value, emailInput.value, messageInput.value)
+          "
+        >
+          SUBMIT
+        </button>
+      </div>
     </form>
   </div>
   <!-- Should have been its own component incase the site ever gets another page -->

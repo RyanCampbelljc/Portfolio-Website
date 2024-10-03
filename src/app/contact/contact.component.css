@@ -3,7 +3,8 @@ input{
     width: 400px;
     background-color: rgb(58, 57, 57);
     border: none;
-    outline: none
+    outline: none;
+    font-size: 1.0rem;
 }
 
 a{
@@ -14,6 +15,7 @@ button{
     color: white;
     border: none;
     background-color: rgb(236, 62, 62);
+    height: fit-content;
 }
 button:hover{
     cursor: pointer;
@@ -40,8 +42,14 @@ button:active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     gap: 5px;
+}
+
+#contact-submit-section{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #footer{
