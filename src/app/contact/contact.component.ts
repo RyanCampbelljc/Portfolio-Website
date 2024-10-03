@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-
+  onSubmit(name: string, email: string, message: string){
+    console.log(name);
+  }
 }

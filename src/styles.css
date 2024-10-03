@@ -8,6 +8,8 @@
 body{
     margin: 0;
     background-color: rgb(37, 36, 36);
+    /* needed to prevent scrolls bars when footer was used inside contact */
+    overflow-x: hidden;
 }
 html{
     font-size: 16px;
