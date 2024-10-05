@@ -3,7 +3,7 @@
    Needed this reference so app.component.navbarHighlightsOnScroll has a way to find this element
    in order to highlight it when it comes into view-->
   <a
-    (click)="scrollToRef()"
+    (click)="this.scrollService.scrollToRef(ref.substring(1))"
     attr.data-reference="{{ ref }}"
     class="textColorFade"
     >{{ label }}</a
