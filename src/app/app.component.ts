@@ -20,6 +20,7 @@ export class AppComponent {
     this.navbarHighlightsOnScroll();
   }
 
+  //highlights navbar properly when scrolling
   private  navbarHighlightsOnScroll(){
     const sections = document.querySelectorAll('.page-section');
     const navLinks = document.querySelectorAll('nav a');

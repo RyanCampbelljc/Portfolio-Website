@@ -68,3 +68,7 @@ button:active{
     justify-content: center;
     gap: 40px;
 }
+
+#back-to-top{
+    padding: 0;
+}

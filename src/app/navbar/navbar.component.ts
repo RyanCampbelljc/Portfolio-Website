@@ -11,13 +11,4 @@ import { NavbarItemComponent } from './navbar-item/navbar-item.component'
 export class NavbarComponent {
 	//todo make this list of navbar items
 	@Input() navbarData: {label:string, ref:string }[] = [];
-	// @Input() navbarData: NavbarItemComponent[] = [];
-
-	// ngOnInit(): void{
-	// 	this.navbarData.forEach(itemData => {
-			// const navbarItem = new NavbarItemComponent();
-			// navbarItem.label = "test";
-			// this.navbarItems.push(navbarItem);
-	// 	  });
-	// }
 }
