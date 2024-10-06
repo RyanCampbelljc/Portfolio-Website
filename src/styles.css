@@ -40,3 +40,18 @@ html{
     /* Gap between Section title and content */
     gap: 100px;
 }
+
+.light-red-bg{
+    background-color: rgb(236, 62, 62);
+}
+
+/* use this to style sizes of the imported symbols. Need to be important to override font-size */
+.icon-size{
+    font-size: 36px !important;
+}
+
+app-project-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

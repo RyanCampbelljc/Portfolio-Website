@@ -22,8 +22,7 @@ a{
 
 #back-to-top{
     padding: 5px;
-    background-color: rgb(236, 62, 62);
 }
-.icon-size{
-    font-size: 36px
+#back-to-top:hover{
+    cursor: pointer;
 }

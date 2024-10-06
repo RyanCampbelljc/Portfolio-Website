@@ -10,7 +10,6 @@ input{
 button{
     color: white;
     border: none;
-    background-color: rgb(236, 62, 62);
     height: fit-content;
 }
 button:hover{
