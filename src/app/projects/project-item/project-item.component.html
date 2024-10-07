@@ -4,16 +4,52 @@
 />
 <!-- todo delete some div id's that arnt used -->
 <div id="project-item-container">
-  <img src="assets/project-images/OpenglCity.png" width="600px" height="auto" />
+  <img src="{{ project?.imgSrc }}" width="600px" height="300px" />
   <div id="item-info-container">
-    <div id="project-name" class="subtitle-font-size">OpenGL City</div>
+    <div id="project-name" class="subtitle-font-size">{{ project?.name }}</div>
     <div id="project-descrition" class="paragraph-font-size">
-      This project is a 3D city simulation built using OpenGL. The city includes
-      a variety of buildings, and roads, with attention to detail in texture
-      mapping and dynamic lighting to create a realistic environment. Users can
-      explore the urban landscape with an interactive camera. This project
-      highlights my skills in computer graphics and OpenGL programming, as well
-      as my understanding of the rendering pipeline.
+      {{ project?.description }}
+    </div>
+    <div id="project-skills-used">
+      <ul>
+        @for(skill of project?.skills; track $index){
+        <li>{{ skill }}</li>
+        }
+      </ul>
+    </div>
+    <div id="project-links">
+      <ul>
+        @for(link of project?.links; track $index){
+        <li>
+          <a
+            class="fa icon-size {{ link.logoClass }}"
+            href="{{ link.href }}"
+            target="_blank"
+          >
+          </a>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- template 
+imgsrc 
+project-name
+description
+skills[]
+links[] ->each link needs a class "fa-github" and href
+-->
+
+<!-- <div id="project-item-container">
+  <img src="" width="600px" height="300px" />
+  <div id="item-info-container">
+    <div id="project-name" class="subtitle-font-size"></div>
+    <div id="project-descrition" class="paragraph-font-size">
+      This project is a 3D city simulation built using OpenGL. The city uses
+      texture mapping and dynamic lighting to create a realistic environment.
+      Users can explore the urban landscape with an interactive camera.
     </div>
     <div id="project-skills-used">
       <ul>
@@ -22,11 +58,15 @@
       </ul>
     </div>
     <div id="project-links">
-      <a
-        class="fa fa-github icon-size"
-        href="https://github.com/RyanCampbelljc/OpenGL-City"
-        target="_blank"
-      ></a>
+      <ul>
+        <li>
+          <a
+            class="fa fa-github icon-size"
+            href="https://github.com/RyanCampbelljc/OpenGL-City"
+            target="_blank"
+          ></a>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+</div> -->

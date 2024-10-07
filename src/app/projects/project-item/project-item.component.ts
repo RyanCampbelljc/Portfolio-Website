@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { Project } from '../../services/project-card/projects.service';
 @Component({
   selector: 'app-project-item',
   standalone: true,
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './project-item.component.css'
 })
 export class ProjectItemComponent {
-
+  @Input() project: Project | null = null;
 }

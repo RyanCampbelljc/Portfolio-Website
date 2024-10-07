@@ -1,4 +1,6 @@
 <div class="page-section" id="projects">
   <div class="title-font-size">Projects</div>
-  <app-project-item></app-project-item>
+  @for(project of projectList; track $index){
+  <app-project-item [project]="project"></app-project-item>
+  }
 </div>
