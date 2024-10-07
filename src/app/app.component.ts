@@ -21,6 +21,7 @@ export class AppComponent {
     this.navbarHighlightsOnScroll();
   }
 
+  //todo title center or above instead of this
   //highlights navbar properly when scrolling
   private  navbarHighlightsOnScroll(){
     const sections = document.querySelectorAll('.page-section');
@@ -28,7 +29,7 @@ export class AppComponent {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         const id = entry.target.getAttribute('id'); // gets id's from the page sections
-        const link = document.querySelector(`a[data-reference="#${id}"]`);//finds the link to highlight using the href with associated id
+        const link = document.querySelector(`a[href="#${id}"]`);//finds the link to highlight using the href with associated id
 
         if (entry.isIntersecting) {
           navLinks.forEach(link => link.classList.remove('active'));

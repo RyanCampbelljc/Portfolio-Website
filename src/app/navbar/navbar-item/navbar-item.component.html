@@ -1,14 +1,3 @@
 <li>
-  <!-- in html the attribute is just 'data-reference'. 'attr' needs to be at start for angular. 
-   Needed this reference so app.component.navbarHighlightsOnScroll has a way to find this element
-   in order to highlight it when it comes into view-->
-  <a
-    (click)="this.scrollService.scrollToRef(ref.substring(1))"
-    attr.data-reference="{{ ref }}"
-    class="textColorFade"
-    >{{ label }}</a
-  >
+  <a href="{{ ref }}" class="textColorFade">{{ label }}</a>
 </li>
-
-<!-- <a [href]="ref" class="textColorFade">{{ label }}</a> -->
-<!-- <a href="{{ ref }}" class="textColorFade">{{ label }}</a> -->

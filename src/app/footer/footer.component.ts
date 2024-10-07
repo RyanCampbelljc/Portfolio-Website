@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ScrollService } from '../services/scroll/scroll.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,9 +8,5 @@ import { ScrollService } from '../services/scroll/scroll.service';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  scrollService: ScrollService;
 
-  constructor(private ss: ScrollService){
-    this.scrollService = ss;
-  }
 }

@@ -32,10 +32,14 @@ export class ProjectsService {
         skills: ["C++", "OpenGL"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/OpenGL-Particle-System"}]
       },
       {imgSrc: "assets/project-images/pong.png", name: "Pong", description: this.PONG_DESCRIPTION,
-        skills: ["TypeScript", "CSS", "ExpressJS", "NodeJS", "SocketIO"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/pong"}]
+        skills: ["TypeScript", "CSS", "ExpressJS", "NodeJS", "SocketIO"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/pong"},
+          {logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/pong"}
+        ]
       },
       {imgSrc: "assets/project-images/MineSweeper.png", name: "Minesweeper", description: this.MINESWEEPER_DESCRIPTION,
-        skills: ["TypeScript", "CSS"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/pong"}]
+        skills: ["TypeScript", "CSS"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/MineSweeper/"}, 
+          {logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/Minesweeper"}
+        ]
       }
     ];
   }
