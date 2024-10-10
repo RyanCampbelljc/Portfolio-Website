@@ -21,26 +21,32 @@ export class ProjectsService {
   readonly PONG_DESCRIPTION: string = "A recreation of the classic pong game in TypeScript. Supports lobby creation in order to play with friends online.";
   readonly MINESWEEPER_DESCRIPTION: string = "A recreation of minesweeper. One of the first projects I did. Recently refactored in TypeScript."
   
+  readonly PROJECT_CITY: Project = {imgSrc: "assets/project-images/OpenglCity.png", name: "OpenGL City", description: this.CITY_DESCRIPTION, 
+    skills: ["C++", "OpenGL"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/OpenGL-City"}]};
+  
+  readonly PROJECT_SCENE_MANAGMENT: Project = {imgSrc: "assets/project-images/SceneManagement.png", name: "Scene Management", description: this.SCENE_MANAGEMENT_DESCRIPTION,
+    skills: ["C++", "OpenGL"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/OpenGL-Scene-Management"}]
+  }
+  
+  readonly PROJECT_PARTICLE_SYSTEM: Project = {imgSrc: "assets/project-images/particleSystem.png", name: "Particle System", description: this.PARTICLE_SYSTEM_DESCRIPTION,
+    skills: ["C++", "OpenGL"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/OpenGL-Particle-System"}]
+  }
+  
+  readonly PROJECT_PONG: Project = {imgSrc: "assets/project-images/pong.png", name: "Pong", description: this.PONG_DESCRIPTION,
+    skills: ["TypeScript", "CSS", "ExpressJS", "NodeJS", "SocketIO"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/pong"},
+      {logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/pong"}]
+    }
+  
+  readonly PROJECT_MINESWEEPER: Project = {imgSrc: "assets/project-images/MineSweeper.png", name: "Minesweeper", description: this.MINESWEEPER_DESCRIPTION,
+    skills: ["TypeScript", "CSS"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/MineSweeper/"}, 
+      {logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/Minesweeper"}]
+    }
+  
+  readonly PROJECT_WEBSITE: Project = {imgSrc: "", name: "This Website!", description: "",
+    skills: ["TypeScript", "CSS", "Angular"], links:[]}
+      
+
   getProjects(): Project[] {
-    return [
-      {imgSrc: "assets/project-images/OpenglCity.png", name: "OpenGL City", description: this.CITY_DESCRIPTION, 
-        skills: ["C++", "OpenGL"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/OpenGL-City"}]},
-      {imgSrc: "assets/project-images/SceneManagement.png", name: "Scene Management", description: this.SCENE_MANAGEMENT_DESCRIPTION,
-        skills: ["C++", "OpenGL"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/OpenGL-Scene-Management"}]
-      },
-      {imgSrc: "assets/project-images/particleSystem.png", name: "Particle System", description: this.PARTICLE_SYSTEM_DESCRIPTION,
-        skills: ["C++", "OpenGL"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/OpenGL-Particle-System"}]
-      },
-      {imgSrc: "assets/project-images/pong.png", name: "Pong", description: this.PONG_DESCRIPTION,
-        skills: ["TypeScript", "CSS", "ExpressJS", "NodeJS", "SocketIO"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/pong"},
-          {logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/pong"}
-        ]
-      },
-      {imgSrc: "assets/project-images/MineSweeper.png", name: "Minesweeper", description: this.MINESWEEPER_DESCRIPTION,
-        skills: ["TypeScript", "CSS"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/MineSweeper/"}, 
-          {logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/Minesweeper"}
-        ]
-      }
-    ];
+    return [this.PROJECT_SCENE_MANAGMENT, this.PROJECT_PARTICLE_SYSTEM, this.PROJECT_PONG, this.PROJECT_CITY, this.PROJECT_MINESWEEPER, this.PROJECT_WEBSITE];
   }
 }

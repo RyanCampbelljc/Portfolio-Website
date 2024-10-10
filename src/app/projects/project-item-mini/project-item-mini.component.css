@@ -6,7 +6,9 @@ a{
 }
 ul{
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
     gap:15px;
     margin:0;
 }
@@ -19,7 +21,7 @@ ul{
     width: 70%;
     gap: 30px;
     justify-content: space-between;
-    text-align: right;
+    text-align: center;
     background-color: rgb(46, 44, 44);
     max-width: 650px;
     max-height: 650px;
@@ -28,6 +30,7 @@ ul{
 #project-description{
     padding: 25px;
     border-radius: 10px;
+    text-align: left;
 }
 
 #item-info-container{

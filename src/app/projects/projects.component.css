@@ -1,5 +1,6 @@
 #project-mini-section{
     display: flex;
-    flex-direction: row;
     width: 70%;
+    justify-content: center;
+    
 }
