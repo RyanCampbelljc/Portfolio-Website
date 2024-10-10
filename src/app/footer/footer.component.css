@@ -1,0 +1,28 @@
+a{
+    text-decoration: none;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(68, 71, 73);
+    padding-bottom: 30px;
+    /* Causes overflow (side scroll bars) but fixed with body{overflow-x: hidden;} */
+    width: 100vw;
+    margin-top: 150px;
+}
+
+#footer-logos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#back-to-top{
+    padding: 5px;
+}
+#back-to-top:hover{
+    cursor: pointer;
+}

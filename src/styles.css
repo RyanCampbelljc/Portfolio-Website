@@ -8,9 +8,12 @@
 body{
     margin: 0;
     background-color: rgb(37, 36, 36);
+    /* needed to prevent scrolls bars when footer was used inside contact */
+    overflow-x: hidden;
 }
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 .textColorFade{
@@ -31,6 +34,25 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    /* height: 95vh; */
     margin: 0 150px;
+    /* When you jump with nav bar padding-top makes sure that the title isnt behind the navbar */
+    padding-top: 90px;
+    /* Gap between Section title and content */
+    gap: 100px;
+}
+
+.light-red-bg{
+    background-color: rgb(236, 62, 62);
+}
+
+/* use this to style sizes of the imported symbols. Need to be important to override font-size */
+.icon-size{
+    font-size: 36px !important;
+}
+
+app-project-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

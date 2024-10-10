@@ -1,0 +1,42 @@
+<div class="page-section" id="contact">
+  <div class="title-font-size page-title">Contact</div>
+  <div id="contact-content">
+    <div class="paragraph-font-size">Some placeholder text</div>
+
+    <form id="content-input-container" method="POST">
+      <input type="text" name="name" placeholder="Name" #nameInput />
+      <!-- todo when lastpass logo when inside this email input
+        it completely clapped the footer location for some reason -->
+      <input type="email" name="email" placeholder="Email" #emailInput />
+      <input
+        type="text"
+        name="message"
+        placeholder="Message"
+        id="message-input"
+        #messageInput
+      />
+      <div id="contact-submit-section">
+        <div id="sumbit-error-messages">
+          <div class="paragraph-font-size" hidden id="name-error-message">
+            Please fill in your name
+          </div>
+          <div class="paragraph-font-size" hidden id="email-error-message">
+            Please fill in your email
+          </div>
+          <div class="paragraph-font-size" hidden id="message-error-message">
+            Please leave a message
+          </div>
+        </div>
+        <button
+          type="button"
+          class="paragraph-font-size light-red-bg"
+          (click)="
+            onSubmit(nameInput.value, emailInput.value, messageInput.value)
+          "
+        >
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

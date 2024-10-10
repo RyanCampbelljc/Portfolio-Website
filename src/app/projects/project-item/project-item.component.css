@@ -1,0 +1,43 @@
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    justify-content: right;
+    gap:15px;
+    margin:0;
+}
+#project-name{
+    color: rgb(201, 195, 199)
+}
+
+#project-item-container{
+    display: flex;
+    width: 70%;
+    gap: 30px;
+    justify-content: space-between;
+    text-align: right;
+}
+
+#project-descrition{
+    background-color: rgb(46, 44, 44);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#item-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+img{
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+img:hover{
+    opacity: 1;
+}

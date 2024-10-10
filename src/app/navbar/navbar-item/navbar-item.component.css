@@ -1,0 +1,17 @@
+li{
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.active{
+    color: red;
+}

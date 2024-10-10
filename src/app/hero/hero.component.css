@@ -1,6 +1,8 @@
 span{
     color: red;
 }
-#hero-container{
+#home{
     justify-content: center;
+    height: 100vh;
+    gap: 0;
 }
