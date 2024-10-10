@@ -16,30 +16,4 @@ import { FooterComponent } from './footer/footer.component';
 })
 export class AppComponent {
   title = 'portfolio-site';
-
-  ngAfterViewInit() {
-    this.navbarHighlightsOnScroll();
-  }
-
-  //todo title center or above instead of this
-  //highlights navbar properly when scrolling
-  private  navbarHighlightsOnScroll(){
-    const sections = document.querySelectorAll('.page-section');
-    const navLinks = document.querySelectorAll('nav a');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const id = entry.target.getAttribute('id'); // gets id's from the page sections
-        const link = document.querySelector(`a[href="#${id}"]`);//finds the link to highlight using the href with associated id
-
-        if (entry.isIntersecting) {
-          navLinks.forEach(link => link.classList.remove('active'));
-          link!.classList.add('active');
-        }
-      });
-    }, {
-      threshold: 0.7 // when 70% of target is visible, the callback is invoked
-    });
-
-    sections.forEach(section => observer.observe(section));
-  }
 }
