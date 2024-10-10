@@ -44,18 +44,3 @@ export class ProjectsService {
     ];
   }
 }
-// <!-- template 
-// imgsrc 
-// project-name
-// description
-// skills[]
-// links[] ->each link needs a class "fa-github" and href
-// 
-// js
-// ts
-// express
-// express session
-// Node
-// socketio
-// flexbox
-// -->

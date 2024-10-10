@@ -1,6 +1,12 @@
 <div class="page-section" id="projects">
   <div class="title-font-size page-title">Projects</div>
-  @for(project of projectList; track $index){
+  @for(project of mainProjectList; track $index){
   <app-project-item [project]="project"></app-project-item>
   }
+  <div>Other Noteable Work</div>
+  <div id="project-mini-section">
+    @for(project of miniProjectList; track $index){
+    <app-project-item-mini [project]="project"></app-project-item-mini>
+    }
+  </div>
 </div>
