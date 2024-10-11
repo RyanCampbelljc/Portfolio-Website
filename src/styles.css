@@ -23,26 +23,31 @@ html{
     transition: color 0.2s ease-in-out;
 }
 .title-font-size{
-    font-size: 4rem;
+    /* font-size: 4rem; */
+    @apply text-3xl md:text-6xl;
+    /* text-7xl */
 }
 .subtitle-font-size{
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    @apply text-2xl md:text-4xl;
+    /* text-4xl */
 }
 .paragraph-font-size{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    @apply md:text-xl;
+    /* text-xl */
 }
 
 /* Each section of the page.(home,about,projects...) */
 .page-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* height: 95vh; */
-    margin: 0 150px;
-    /* When you jump with nav bar padding-top makes sure that the title isnt behind the navbar */
-    padding-top: 90px;
-    /* Gap between Section title and content */
-    gap: 100px;
+    /* title and content gap */
+    @apply flex flex-col items-center pt-20;
+    /* padding-top: 90px; */
+    /* margin: 0 150px; */
+}
+
+.page-title{
+    @apply pb-5 lg:pb-20;
 }
 
 .light-red-bg{
@@ -52,10 +57,4 @@ html{
 /* use this to style sizes of the imported symbols. Need to be important to override font-size */
 .icon-size{
     font-size: 36px !important;
-}
-
-app-project-item{
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { AboutImageComponent } from './about-image/about-image.component';
+import { AboutImagesService, ImageInfo } from '../services/about/about-images.service';
 @Component({
   selector: 'app-about',
   standalone: true,
@@ -8,5 +9,10 @@ import { AboutImageComponent } from './about-image/about-image.component';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-  @Input() imageList: AboutImageComponent[] = [];
+  imageService: AboutImagesService;
+  imageList: ImageInfo[];
+  constructor(private service: AboutImagesService){
+    this.imageService = service;
+    this.imageList = this.imageService.getSkillCards();
+  }
 }
