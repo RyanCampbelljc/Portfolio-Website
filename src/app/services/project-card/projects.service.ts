@@ -43,7 +43,7 @@ export class ProjectsService {
     }
   
   readonly PROJECT_WEBSITE: Project = {imgSrc: "", name: "This Website!", description: "",
-    skills: ["TypeScript", "CSS", "Angular"], links:[]}
+    skills: ["TypeScript", "CSS", "Angular", "Tailwind"], links:[]}
       
 
   getProjects(): Project[] {

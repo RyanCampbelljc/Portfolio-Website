@@ -1,5 +1,8 @@
-<nav id="navbar-container">
-  <ul>
+<nav
+  id="navbar-container"
+  class="h-14 flex justify-end items-center px-8 z-10 fixed w-full"
+>
+  <ul class="flex gap-8 m-0">
     @for(item of navbarData; track $index){
     <app-navbar-item [label]="item.label" [ref]="item.ref"></app-navbar-item>
     }
