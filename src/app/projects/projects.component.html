@@ -1,10 +1,12 @@
-<div class="page-section" id="projects">
+<div class="page-section mx-1 xl:mx-64" id="projects">
   <div class="title-font-size page-title">Projects</div>
-  @for(project of mainProjectList; track $index){
-  <app-project-item [project]="project"></app-project-item>
-  }
-  <div class="subtitle-font-size">Other Noteable Work</div>
-  <div id="project-mini-section">
+  <div class="flex flex-col">
+    @for(project of mainProjectList; track $index){
+    <app-project-item [project]="project"></app-project-item>
+    }
+  </div>
+  <div class="subtitle-font-size py-20">Other Noteable Work</div>
+  <div class="flex justify-center gap-8">
     @for(project of miniProjectList; track $index){
     <app-project-item-mini [project]="project"></app-project-item-mini>
     }
