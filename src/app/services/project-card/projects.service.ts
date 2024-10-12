@@ -33,17 +33,17 @@ export class ProjectsService {
   }
   
   readonly PROJECT_PONG: Project = {imgSrc: "assets/project-images/pong.png", name: "Pong", description: this.PONG_DESCRIPTION,
-    skills: ["TypeScript", "CSS", "ExpressJS", "NodeJS", "SocketIO"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/pong"},
-      {logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/pong"}]
+    skills: ["TypeScript", "HTML", "CSS", "ExpressJS", "NodeJS", "SocketIO",], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/pong"},
+      {logoClass: "fa-external-link", href: "https://ryanjc.ca/pong"}]
     }
   
   readonly PROJECT_MINESWEEPER: Project = {imgSrc: "assets/project-images/MineSweeper.png", name: "Minesweeper", description: this.MINESWEEPER_DESCRIPTION,
-    skills: ["TypeScript", "CSS"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/MineSweeper/"}, 
+    skills: ["TypeScript", "HTML", "CSS"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/MineSweeper/"}, 
       {logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/Minesweeper"}]
     }
   
   readonly PROJECT_WEBSITE: Project = {imgSrc: "", name: "This Website!", description: "",
-    skills: ["TypeScript", "CSS", "Angular", "Tailwind"], links:[]}
+    skills: ["HTML", "CSS", "Angular", "Tailwind"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/Portfolio-Website"}]}
       
 
   getProjects(): Project[] {

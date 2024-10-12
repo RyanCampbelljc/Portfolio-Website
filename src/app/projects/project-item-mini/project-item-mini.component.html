@@ -2,22 +2,25 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
-<!-- todo delete some div id's that arnt used -->
-<div id="temp"></div>
-<div id="project-item-container">
-  <div id="item-info-container">
-    <div id="project-name" class="subtitle-font-size">{{ project?.name }}</div>
-    <div id="project-description" class="paragraph-font-size">
-      {{ project?.description }}
-    </div>
-    <div id="project-skills-used">
+
+<div
+  class="bg-paragraph-bg flex flex-col justify-between gap-6 h-full rounded-lg py-6"
+>
+  <div class="subtitle-font-size text-subtitle-color text-center">
+    {{ project?.name }}
+  </div>
+  <div class="paragraph-font-size text-justify p-6">
+    {{ project?.description }}
+  </div>
+  <div>
+    <div class="pb-4">
       <ul>
         @for(skill of project?.skills; track $index){
         <li>{{ skill }}</li>
         }
       </ul>
     </div>
-    <div id="project-links">
+    <div>
       <ul>
         @for(link of project?.links; track $index){
         <li>

@@ -6,9 +6,12 @@
     }
   </div>
   <div class="subtitle-font-size py-20">Other Noteable Work</div>
-  <div class="flex justify-center gap-8">
+  <div class="flex flex-col lg:flex-row justify-center gap-8 flex-wrap">
     @for(project of miniProjectList; track $index){
-    <app-project-item-mini [project]="project"></app-project-item-mini>
+    <app-project-item-mini
+      [project]="project"
+      class="flex-1"
+    ></app-project-item-mini>
     }
   </div>
 </div>
