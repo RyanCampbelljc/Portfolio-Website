@@ -1,6 +1,6 @@
 <div class="page-section mx-1 xl:mx-64" id="projects">
   <div class="title-font-size page-title">Projects</div>
-  <div class="flex flex-col">
+  <div class="flex flex-col gap-10">
     @for(project of mainProjectList; track $index){
     <app-project-item [project]="project"></app-project-item>
     }

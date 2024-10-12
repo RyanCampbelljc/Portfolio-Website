@@ -3,11 +3,19 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
 <!-- todo delete some div id's that arnt used -->
-<div class="flex flex-col lg:flex-row justify-between text-right gap-8">
+<div class="flex flex-col lg:flex-row justify-between gap-2 lg:gap-8">
+  <div class="subtitle-font-size text-subtitle-color lg:hidden text-center">
+    {{ project?.name }}
+  </div>
   <img src="{{ project?.imgSrc }}" width="600px" height="300px" />
-  <div class="flex flex-col gap-6">
-    <div id="project-name" class="subtitle-font-size">{{ project?.name }}</div>
-    <div class="paragraph-font-size p-6 rounded-lg bg-paragraph-bg">
+  <div class="flex flex-col gap-2">
+    <!---->
+    <div class="subtitle-font-size text-subtitle-color hidden lg:block">
+      {{ project?.name }}
+    </div>
+    <div
+      class="paragraph-font-size p-6 rounded-lg bg-paragraph-bg text-justify"
+    >
       {{ project?.description }}
     </div>
     <div id="project-skills-used">

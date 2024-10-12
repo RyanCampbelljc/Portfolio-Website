@@ -5,10 +5,7 @@ a{
     text-decoration: none;
 }
 ul{
-    @apply flex justify-end gap-4 m-0
-}
-#project-name{
-    color: rgb(201, 195, 199)
+    @apply flex justify-center lg:justify-start gap-4 m-0;
 }
 
 img{
