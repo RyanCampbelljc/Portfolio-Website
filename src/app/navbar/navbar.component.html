@@ -6,5 +6,11 @@
     @for(item of navbarData; track $index){
     <app-navbar-item [label]="item.label" [ref]="item.ref"></app-navbar-item>
     }
+    <a
+      class="hover:text-red-color textColorFade text-xl border border-red-color px-2 rounded-lg"
+      href="assets/Resume.pdf"
+      target="_blank"
+      >Resume</a
+    >
   </ul>
 </nav>

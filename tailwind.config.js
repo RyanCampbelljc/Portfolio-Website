@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "paragraph-bg": "#2e2c2c",
         "subtitle-color": "#C9C7C3",
+        "red-color": "#FF0000",
       },
     },
   },
