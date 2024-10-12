@@ -41,7 +41,7 @@ html{
 /* Each section of the page.(home,about,projects...) */
 .page-section{
     /* title and content gap */
-    @apply flex flex-col items-center pt-20;
+    @apply flex flex-col items-center pt-20 max-w-screen-xl mx-4 lg:mx-auto;
     /* padding-top: 90px; */
     /* margin: 0 150px; */
 }
