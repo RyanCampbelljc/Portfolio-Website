@@ -16,20 +16,12 @@
         #messageInput
       />
       <div id="contact-submit-section">
-        <div id="sumbit-error-messages">
-          <div class="paragraph-font-size" hidden id="name-error-message">
-            Please fill in your name
-          </div>
-          <div class="paragraph-font-size" hidden id="email-error-message">
-            Please fill in your email
-          </div>
-          <div class="paragraph-font-size" hidden id="message-error-message">
-            Please leave a message
-          </div>
+        <div class="paragraph-font-size" hidden id="error-message">
+          Please fill in all input boxes.
         </div>
         <button
           type="button"
-          class="paragraph-font-size light-red-bg"
+          class="paragraph-font-size light-red-bg ml-auto p-1"
           (click)="
             onSubmit(nameInput.value, emailInput.value, messageInput.value)
           "

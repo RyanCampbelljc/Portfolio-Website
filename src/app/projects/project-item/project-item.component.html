@@ -5,29 +5,29 @@
 <!-- todo delete some div id's that arnt used -->
 <div class="flex flex-col lg:flex-row gap-2 lg:gap-8">
   <div class="subtitle-font-size text-subtitle-color lg:hidden text-center">
-    {{ project!.name }}
+    {{ project.name }}
   </div>
-  <img src="{{ project!.imgSrc }}" class="lg:w-2/4" />
+  <img src="{{ project.imgSrc }}" class="lg:w-2/4" />
   <div class="flex flex-col gap-2 lg:w-2/4">
     <!---->
     <div class="subtitle-font-size text-subtitle-color hidden lg:block">
-      {{ project!.name }}
+      {{ project.name }}
     </div>
     <div
       class="paragraph-font-size p-6 rounded-lg bg-paragraph-bg text-justify"
     >
-      {{ project!.description }}
+      {{ project.description }}
     </div>
     <div id="project-skills-used">
       <ul>
-        @for(skill of project!.skills; track $index){
+        @for(skill of project.skills; track $index){
         <li>{{ skill }}</li>
         }
       </ul>
     </div>
     <div id="project-links">
       <ul>
-        @for(link of project!.links; track $index){
+        @for(link of project.links; track $index){
         <li>
           <a
             class="fa icon-size {{ link.logoClass }}"

@@ -47,7 +47,7 @@ html{
 }
 
 .page-title{
-    @apply pb-5 lg:pb-20;
+    @apply pb-5 lg:pb-16 font-bold;
 }
 
 .light-red-bg{

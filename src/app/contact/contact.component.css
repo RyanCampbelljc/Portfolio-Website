@@ -5,6 +5,7 @@ input{
     border: none;
     outline: none;
     font-size: 1.0rem;
+    padding-left: 4px;
 }
 
 button{

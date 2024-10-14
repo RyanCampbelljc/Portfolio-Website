@@ -8,5 +8,5 @@ import { Project } from '../../services/project-card/projects.service';
   styleUrl: './project-item.component.css'
 })
 export class ProjectItemComponent {
-  @Input() project: Project | null = null;
+  @Input() project!: Project;
 }

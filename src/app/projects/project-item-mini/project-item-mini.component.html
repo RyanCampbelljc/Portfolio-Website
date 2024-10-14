@@ -7,22 +7,22 @@
   class="bg-paragraph-bg flex flex-col justify-between gap-6 h-full rounded-lg py-6"
 >
   <div class="subtitle-font-size text-subtitle-color text-center">
-    {{ project?.name }}
+    {{ project.name }}
   </div>
   <div class="paragraph-font-size text-justify p-6">
-    {{ project?.description }}
+    {{ project.description }}
   </div>
   <div>
     <div class="pb-4">
       <ul>
-        @for(skill of project?.skills; track $index){
+        @for(skill of project.skills; track $index){
         <li>{{ skill }}</li>
         }
       </ul>
     </div>
     <div>
       <ul>
-        @for(link of project?.links; track $index){
+        @for(link of project.links; track $index){
         <li>
           <a
             class="fa icon-size {{ link.logoClass }}"

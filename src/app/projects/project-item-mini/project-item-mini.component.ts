@@ -9,5 +9,5 @@ import { Project } from '../../services/project-card/projects.service';
   styleUrl: './project-item-mini.component.css'
 })
 export class ProjectItemMiniComponent {
-  @Input() project: Project | null = null;
+  @Input() project!: Project;
 }
