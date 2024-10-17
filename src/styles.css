@@ -51,11 +51,11 @@ html{
     /* border-b-8 border-red-800 bg-clip-content */
 }
 
-.light-red-bg{
-    background-color: rgb(236, 62, 62);
-}
-
 /* use this to style sizes of the imported symbols. Need to be important to override font-size */
 .icon-size{
     font-size: 36px !important;
+}
+
+.icon-hover{
+    @apply textColorFade hover:text-red-light
 }
