@@ -1,34 +1,30 @@
 <div class="page-section" id="contact">
   <div class="title-font-size page-title">Contact</div>
   <div id="contact-content">
-    <div class="paragraph-font-size">Some placeholder text</div>
-
-    <form id="content-input-container" method="POST">
-      <input type="text" name="name" placeholder="Name" #nameInput />
-      <!-- todo when lastpass logo when inside this email input
-        it completely clapped the footer location for some reason -->
-      <input type="email" name="email" placeholder="Email" #emailInput />
-      <input
-        type="text"
-        name="message"
-        placeholder="Message"
-        id="message-input"
-        #messageInput
-      />
-      <div id="contact-submit-section">
-        <div class="paragraph-font-size" hidden id="error-message">
-          Please fill in all input boxes.
-        </div>
-        <button
-          type="button"
-          class="paragraph-font-size light-red-bg ml-auto p-1"
-          (click)="
-            onSubmit(nameInput.value, emailInput.value, messageInput.value)
-          "
-        >
-          SUBMIT
-        </button>
-      </div>
-    </form>
+    <div class="paragraph-font-size text-center">
+      Please send a message for any questions or work inquries.
+    </div>
+    <div class="paragraph-font-size">
+      <a
+        href="mailto:ryancampbelljc@gmail.com"
+        class="text-white hover:text-red-color textColorFade"
+        ><button class="border-2 border-red-color rounded-lg p-3">
+          Contact Me
+        </button></a
+      >
+    </div>
+    <div class="flex justify-center gap-10">
+      <a
+        class="fa fa-github icon-size"
+        href="https://github.com/RyanCampbelljc"
+        target="_blank"
+      ></a>
+      <a
+        class="fa fa-linkedin-square icon-size"
+        href="https://www.linkedin.com/in/ryan-campbell-09472625a/"
+        target="_blank"
+      ></a>
+    </div>
   </div>
 </div>
+<!-- &#64;ryancampbelljc&#64;gmail.com -->

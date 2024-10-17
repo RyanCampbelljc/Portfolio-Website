@@ -1,25 +1,3 @@
-input{
-    height: 30px;
-    width: 400px;
-    background-color: rgb(58, 57, 57);
-    border: none;
-    outline: none;
-    font-size: 1.0rem;
-    padding-left: 4px;
-}
-
-button{
-    color: white;
-    border: none;
-    height: fit-content;
-}
-button:hover{
-    cursor: pointer;
-}
-button:active{
-    background-color: rgb(240, 22, 22);
-}
-
 #contact-content{
     height: 100%;
     display: flex;
@@ -30,16 +8,3 @@ button:active{
     width: 100%;
 }
 
-#content-input-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-#contact-submit-section{
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}

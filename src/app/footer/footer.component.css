@@ -14,12 +14,6 @@ a{
     margin-top: 150px;
 }
 
-#footer-logos{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
 #back-to-top{
     padding: 5px;
 }
