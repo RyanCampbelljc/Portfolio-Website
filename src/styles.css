@@ -8,17 +8,21 @@
     font-family: "Figtree", sans-serif;
     color:white;
 }
-body{
-    margin: 0;
-    /* background-color: rgb(37, 36, 36); */
-    /* needed to prevent scrolls bars when footer was used inside contact */
-    overflow-x: hidden;
+
+/* Applying bgGradient to lg screens. Need the @layer directive for tailwind to find */
+@layer utilities{
+    .bgGradient{
+        background: linear-gradient(-45deg, #252424, #423e3e);
+        background-attachment: fixed; 
+    }
 }
 body {
-	background: linear-gradient(-45deg, #252424, #3d3939);
-	background-size: 1000% 1000%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
+	/* background: linear-gradient(-45deg, #252424, #423e3e);
+    background-attachment: fixed;
+    height: 100vh; */
+    margin: 0;
+    overflow-x: hidden;
+    @apply bg-gradient-one lg:bgGradient
 }
 
 @keyframes gradient {

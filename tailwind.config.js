@@ -8,6 +8,8 @@ module.exports = {
         "subtitle-color": "#C9C7C3",
         "red-color": "#FF0000",
         "red-light": "#EC3E3E",
+        "gradient-one": "#252424",
+        "gradient-two": "#423E3E",
       },
     },
   },
