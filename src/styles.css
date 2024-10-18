@@ -53,8 +53,10 @@ html{
     @apply text-3xl md:text-6xl;
     /* text-7xl */
 }
+
 .subtitle-font-size{
     /* font-size: 2rem; */
+    
     @apply text-2xl md:text-4xl;
     /* text-4xl */
 }
@@ -84,4 +86,12 @@ html{
 
 .icon-hover{
     @apply textColorFade hover:text-red-light
+}
+
+.title-shadow{
+    text-shadow: 0px 0px 6px red;
+}
+
+.page-button{
+    @apply hover:text-red-color textColorFade text-2xl border-2 border-red-color px-3 rounded-lg
 }
