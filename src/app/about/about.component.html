@@ -1,8 +1,11 @@
 <!-- <div class="page-section mx-4 lg:mx-60" id="about"> -->
 <div class="page-section" id="about">
   <div class="title-font-size page-title title-shadow">About</div>
-  <div class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-48">
-    <div class="about-content-item paragraph-font-size text-justify">
+  <div class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-14">
+    <div
+      class="about-content-item paragraph-font-size text-justify"
+      custom-animation="animate-slideInFromLeft"
+    >
       Avid programmer who recently started to dive into full stack development.
       Being able to use logic and problem solving, along with never running out
       of things to learn, drives my excitement for software development. I have
@@ -16,7 +19,7 @@
       where I worked on a 2D platformer game in Godot. Away from the computer I
       like to spend my time at the gym, running, and reading.
     </div>
-    <div class="about-content-item flex flex-wrap justify-center gap-2.5">
+    <div class="about-content-item flex flex-wrap justify-between gap-2.5">
       <!-- prettier-ignore -->
       @for(image of imageList; track $index){
       <app-about-image

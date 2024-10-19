@@ -16,4 +16,22 @@ import { FooterComponent } from './footer/footer.component';
 })
 export class AppComponent {
   title = 'portfolio-site';
+
+  ngAfterViewInit(){
+    const elements = document.querySelectorAll('[custom-animation]');
+    const observer = new IntersectionObserver((entries) =>{
+      entries.forEach((entry) => {
+        if(entry.isIntersecting){
+          const animationClass = entry.target.getAttribute('custom-animation');
+          if(animationClass)
+            entry.target.classList.add(animationClass);
+          else
+            console.error("No custom animation on attribute")
+        }
+      });
+    }, {threshold: 0})
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+  }
 }
