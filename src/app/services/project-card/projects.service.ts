@@ -21,6 +21,7 @@ export class ProjectsService {
   readonly PONG_DESCRIPTION: string = "A recreation of the classic pong game in TypeScript. Supports lobby creation in order to play with friends online.";
   readonly MINESWEEPER_DESCRIPTION: string = "A recreation of minesweeper. One of the first projects I did. Recently refactored in TypeScript."
   readonly WEBSITE_DESCRIPTION: string = "My first project using a frontend framework. Made in October 2024."
+  readonly SUDOKU_DESCRIPTION: string = "A Sudoku solver / algorithm visualizer made with Python and Tkinter."
 
   readonly PROJECT_CITY: Project = {imgSrc: "assets/project-images/OpenglCity.png", name: "OpenGL City", description: this.CITY_DESCRIPTION, 
     skills: ["C++", "OpenGL"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/OpenGL-City"}]};
@@ -34,8 +35,8 @@ export class ProjectsService {
   }
   
   readonly PROJECT_PONG: Project = {imgSrc: "assets/project-images/pong.png", name: "Pong", description: this.PONG_DESCRIPTION,
-    skills: ["TypeScript", "HTML", "CSS", "ExpressJS", "NodeJS", "SocketIO",], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/pong"},
-      {logoClass: "fa-external-link", href: "https://ryanjc.ca/pong"}]
+    skills: ["TypeScript", "HTML", "CSS", "ExpressJS", "NodeJS", "SocketIO",], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/pong"}]
+    //{logoClass: "fa-external-link", href: "https://ryanjc.ca/pong"}
     }
   
   readonly PROJECT_MINESWEEPER: Project = {imgSrc: "assets/project-images/MineSweeper.png", name: "Minesweeper", description: this.MINESWEEPER_DESCRIPTION,
@@ -45,9 +46,12 @@ export class ProjectsService {
   
   readonly PROJECT_WEBSITE: Project = {imgSrc: "", name: "This Website!", description: this.WEBSITE_DESCRIPTION,
     skills: ["HTML", "CSS", "Angular", "Tailwind"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/Portfolio-Website"}]}
+  
+  readonly PROJECT_SUDOKU: Project = {imgSrc: "", name: "Sudoku Algorithm Visualizer", description: this.SUDOKU_DESCRIPTION,
+      skills: ["Python", "Tkinter"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/Sudoku-Solver"}]}
       
 
   getProjects(): Project[] {
-    return [this.PROJECT_SCENE_MANAGMENT, this.PROJECT_PARTICLE_SYSTEM, this.PROJECT_PONG, this.PROJECT_CITY, this.PROJECT_MINESWEEPER, this.PROJECT_WEBSITE];
+    return [this.PROJECT_SCENE_MANAGMENT, this.PROJECT_PARTICLE_SYSTEM, this.PROJECT_PONG, this.PROJECT_CITY, this.PROJECT_MINESWEEPER, this.PROJECT_WEBSITE, this.PROJECT_SUDOKU];
   }
 }

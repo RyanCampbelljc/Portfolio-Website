@@ -18,6 +18,7 @@ export class AboutImagesService {
       { title: 'ExpressJS', src: 'assets/express.png' },
       { title: 'Angular', src: 'assets/angular.png' },
       { title: 'NodeJS', src: 'assets/node.png' },
+      { title: 'Python', src: 'assets/python.png' },
       { title: 'C++', src: 'assets/c++.png' },
       { title: 'OpenGL', src: 'assets/opengl.png' },
       { title: 'Java', src: 'assets/java.png' },
