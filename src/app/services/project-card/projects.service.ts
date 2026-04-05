@@ -16,12 +16,13 @@ export class ProjectsService {
   // projects: Project[] =[];
 
   readonly CITY_DESCRIPTION: string = "This project is a 3D city simulation built using OpenGL. The city uses texture mapping and dynamic lighting to create a realistic environment. Users can explore the urban landscape with an interactive camera.";
-  readonly SCENE_MANAGEMENT_DESCRIPTION: string = "This project is a scene management system made in OpenGL for optimized rendering. Nodes are organized into heiarchies, each with their own speherical bounding volume which covers itself and its children. Top level nodes are placed into a quadtree data structure which manages them based on their location in the world. Each frame frustum culling is preformed on the quadtree sections and appropriate nodes for efficient rendering."
-  readonly PARTICLE_SYSTEM_DESCRIPTION: string = "Particle system designed to simulate real-time particle effects like fire, smoke, or explosions. The particle effects can be customized in XML files to change properties such as color, texture, duration, velocity, spawn rate, and pool size. Each particle emitter manages one pool of particles and renders all particles in one draw call in order to improve efficiency."
+  readonly SCENE_MANAGEMENT_DESCRIPTION: string = "This project is a scene management system made in OpenGL for optimized rendering. Nodes are organized into heiarchies, each with their own speherical bounding volume which covers itself and its children. Top level nodes are placed into a quadtree data structure which manages them based on their location in the world. Each frame frustum culling is preformed on the quadtree sections and appropriate nodes for efficient rendering.";
+  readonly PARTICLE_SYSTEM_DESCRIPTION: string = "Particle system designed to simulate real-time particle effects like fire, smoke, or explosions. The particle effects can be customized in XML files to change properties such as color, texture, duration, velocity, spawn rate, and pool size. Each particle emitter manages one pool of particles and renders all particles in one draw call in order to improve efficiency.";
   readonly PONG_DESCRIPTION: string = "A recreation of the classic pong game in TypeScript. Supports lobby creation in order to play with friends online.";
   readonly MINESWEEPER_DESCRIPTION: string = "A recreation of minesweeper. One of the first projects I did. Recently refactored in TypeScript."
-  readonly WEBSITE_DESCRIPTION: string = "My first project using a frontend framework. First released in October 2024."
-  readonly SUDOKU_DESCRIPTION: string = "A Sudoku solver / algorithm visualizer made with Python and Tkinter."
+  readonly WEBSITE_DESCRIPTION: string = "My first project using a frontend framework. First released in October 2024.";
+  readonly SUDOKU_DESCRIPTION: string = "A Sudoku solver / algorithm visualizer made with Python and Tkinter.";
+  readonly PAPER_DESCRIPTION: string = "A research paper introducing instanced rendering, as well as a comparison of frame rate using instanced rendering vs a naive approach. ";
 
   readonly PROJECT_CITY: Project = {imgSrc: "assets/project-images/OpenglCity.png", name: "OpenGL City", description: this.CITY_DESCRIPTION, 
     skills: ["C++", "OpenGL", "GLSL"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/OpenGL-City"}]};
@@ -49,9 +50,12 @@ export class ProjectsService {
   
   readonly PROJECT_SUDOKU: Project = {imgSrc: "", name: "Sudoku Algorithm Visualizer", description: this.SUDOKU_DESCRIPTION,
       skills: ["Python", "Tkinter"], links:[{logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/Sudoku-Solver"}]}
+  
+  readonly PROJECT_PAPER: Project = {imgSrc: "", name: "Instanced Rendering Paper", description: this.PAPER_DESCRIPTION,
+      skills: ["OpenGL"], links:[{logoClass: "fa-external-link", href: "assets/Paper.pdf"}]}
       
-
+// <a class="page-button" href="assets/Resume.pdf" target="_blank">Resume</a>
   getProjects(): Project[] {
-    return [this.PROJECT_SCENE_MANAGMENT, this.PROJECT_PARTICLE_SYSTEM, this.PROJECT_PONG, this.PROJECT_CITY, this.PROJECT_MINESWEEPER, this.PROJECT_WEBSITE, this.PROJECT_SUDOKU];
+    return [this.PROJECT_SCENE_MANAGMENT, this.PROJECT_PARTICLE_SYSTEM, this.PROJECT_PONG, this.PROJECT_CITY, this.PROJECT_MINESWEEPER, this.PROJECT_WEBSITE, this.PROJECT_SUDOKU, this.PROJECT_PAPER];
   }
 }
