@@ -1,0 +1,3 @@
+[submodule "src/assets/MineSweeper"]
+	path = src/assets/MineSweeper
+	url = https://github.com/RyanCampbelljc/Minesweeper.git

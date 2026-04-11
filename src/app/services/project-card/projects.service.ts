@@ -41,7 +41,7 @@ export class ProjectsService {
     }
   
   readonly PROJECT_MINESWEEPER: Project = {imgSrc: "assets/project-images/MineSweeper.png", name: "Minesweeper", description: this.MINESWEEPER_DESCRIPTION,
-    skills: ["TypeScript", "HTML", "CSS"], links:[{logoClass: "fa-external-link", href: "https://ryanjc.ca/MineSweeper/"}, 
+    skills: ["TypeScript", "HTML", "CSS"], links:[{logoClass: "fa-external-link", href: "/assets/MineSweeper/index.html"}, 
       {logoClass: "fa-github", href: "https://github.com/RyanCampbelljc/Minesweeper"}]
     }
   

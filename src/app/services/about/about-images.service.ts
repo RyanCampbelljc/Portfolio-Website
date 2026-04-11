@@ -22,7 +22,7 @@ export class AboutImagesService {
       { title: 'Python', src: 'assets/python.png' },
       { title: 'OpenGL', src: 'assets/opengl.png' },
       { title: 'Godot', src: 'assets/godot.png' },
-      { title: 'Cocos Creator', src: 'assets/cocos.png' },
+      { title: 'Cocos', src: 'assets/cocos.png' },
     ]
   }  
 }
