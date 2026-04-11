@@ -9,7 +9,7 @@
   <div class="subtitle-font-size text-subtitle-color lg:hidden text-center"> 
     {{ workCard.Employer }}<br>
     <div class="paragraph-font-size text-white">
-      {{ workCard.JobTitle }}
+      {{ workCard.JobTitle }} <br> {{ workCard.Date }} 
     </div>
   </div>
 
@@ -18,8 +18,13 @@
     <!-- Large screen -->
     <div class="subtitle-font-size text-subtitle-color hidden lg:block">
       {{ workCard.Employer }} <br>
-      <div class="paragraph-font-size text-white">
-        {{ workCard.JobTitle }}
+      <div class="flex flex-row justify-between paragraph-font-size text-white">
+        <div>
+          {{ workCard.JobTitle }} 
+        </div>
+        <div>
+          {{ workCard.Date }} 
+        </div>
       </div>
     </div>
 
