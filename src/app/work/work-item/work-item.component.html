@@ -1,0 +1,35 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
+<div class="flex flex-col lg:flex-row gap-2 lg:gap-8">
+
+  <!-- Small screen -->
+  <div class="subtitle-font-size text-subtitle-color lg:hidden text-center"> 
+    {{ workCard.Employer }}<br>
+    <div class="paragraph-font-size text-white">
+      {{ workCard.JobTitle }}
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-2">
+
+    <!-- Large screen -->
+    <div class="subtitle-font-size text-subtitle-color hidden lg:block">
+      {{ workCard.Employer }} <br>
+      <div class="paragraph-font-size text-white">
+        {{ workCard.JobTitle }}
+      </div>
+    </div>
+
+    <div class="paragraph-font-size p-6 rounded-lg bg-paragraph-bg">
+      <ul class="list-disc pl-5 space-y-1">
+        @for(skill of workCard.Points; track $index){
+          <li>{{ skill }}</li>
+        }
+      </ul>
+    </div>
+
+  </div>
+</div>

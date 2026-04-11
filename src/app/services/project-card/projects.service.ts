@@ -55,7 +55,7 @@ export class ProjectsService {
       skills: ["OpenGL"], links:[{logoClass: "fa-external-link", href: "assets/Paper.pdf"}]}
       
 // <a class="page-button" href="assets/Resume.pdf" target="_blank">Resume</a>
-  getProjects(): Project[] {
+  public getProjects(): Project[] {
     return [this.PROJECT_SCENE_MANAGMENT, this.PROJECT_PARTICLE_SYSTEM, this.PROJECT_PONG, this.PROJECT_CITY, this.PROJECT_MINESWEEPER, this.PROJECT_WEBSITE, this.PROJECT_SUDOKU, this.PROJECT_PAPER];
   }
 }

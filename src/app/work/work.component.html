@@ -1,0 +1,8 @@
+<div class="page-section" id="projects">
+  <div class="title-font-size page-title title-shadow">Work</div>
+  <div class="flex flex-col gap-10">
+    @for(card of workCardList; track $index){
+    <app-work-item [workCard]="card"></app-work-item>
+    }
+  </div>
+</div>
